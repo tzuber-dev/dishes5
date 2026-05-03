@@ -5,6 +5,25 @@
 
 #include "../src/hello.hpp"
 
-TEST_CASE( "it returns Hello World" ) {
-    REQUIRE( hello() == "Hello World!" );
+
+
+
+TEST_CASE( "allowedspace works" ) {
+QueueTees waitinglist;
+    Cutie* cutiesobject = nullptr;
+
+
+    for (int x=0; x<10; x++) {
+        waitinglist.enqueue(cutiesobject);
+    };
+
+
+    REQUIRE(waitinglist.size() ==10);
+    REQUIRE(waitinglist.fullsize()== true) ;
+
+
+    waitinglist.enqueue(cutiesobject);
+
+
+
 }
