@@ -52,13 +52,16 @@ Cutie *QueueTees::dequeue() {
 };
 
 
-int QueueTees::size() {
-    return sizeatthemoment;
-};
 
 
 bool QueueTees::fullsize() {
     return sizeatthemoment == allowedspace;
+};
+
+
+
+int QueueTees::size() {
+    return sizeatthemoment;
 };
 
 
